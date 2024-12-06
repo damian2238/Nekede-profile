@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(197, 214, 240);
+    position: relative;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 40px);
+    opacity: 40%;
+
+    background-image: url(assest/images/download.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    z-index: 10;
+}
+
+img{
+    width: 50px;
+}
+
+#sch{
+    color:rgb(12, 69, 90);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11.3px;
+}
+#sch-name{
+    color:#bc6625;
+    line-height: 0.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#skills{
+    color:rgb(37, 150, 190);
+    font-size: 12px;
+    font-weight: 1000;font-style: italic;
+}
+
+#performance{
+text-align: center;
+margin: 15px 0 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(6, 6, 66);
+font-weight: 599;
+}
+
+main{
+    margin: 0 auto 0 auto;background-color:#063970 ;
+    padding: 20px;
+    width: 355px;
+    border-radius: 10px;
+    z-index: 100;
+}
+#log{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 15px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+#button{
+    border: 2px solid;
+    background-color: #063970;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;padding: 7px;
+    color: #bc6625;
+}
+
+#label{
+    margin-bottom: 30px;
+}
+input{
+    background-color: inherit;
+    padding: 5px 5px;
+    border: none;
+    border-bottom:2px solid white ;
+    border-radius: 5px;
+    width: 100%;
+    margin: px;
+}
+input::placeholder{
+    color: rgb(188, 184, 184)
+}
+
+#logs{
+    border: 2px solid;
+    background-color: #063970;
+    margin: 10px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0 8px 0;
+    color: #bc6625; 
+    width: 35%;
+}
